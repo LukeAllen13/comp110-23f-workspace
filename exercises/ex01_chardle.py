@@ -42,7 +42,7 @@ else:
 
 if five_char_word[i] == single_char:
     print(single_char + " found at index " + str(i))
-    i+=1
+    i += 1
     num_chars += 1
 
 else:
