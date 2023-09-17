@@ -19,39 +19,39 @@ i = 0
 num_chars = 0
 if five_char_word[i] == single_char:
     print(single_char + " found at index " + str(i))
-    i+=1
-    num_chars +=1
+    i += 1
+    num_chars += 1
 else:
-    i+=1
+    i += 1
+
+if five_char_word[i] == single_char:
+    print(single_char + " found at index " + str(i))
+    i += 1
+    num_chars += 1
+
+else:
+    i += 1
+
+if five_char_word[i] == single_char:
+    print(single_char + " found at index " + str(i))
+    i += 1
+    num_chars += 1
+
+else:
+    i += 1
 
 if five_char_word[i] == single_char:
     print(single_char + " found at index " + str(i))
     i+=1
-    num_chars +=1
+    num_chars += 1
 
 else:
-    i+=1
+    i += 1
 
 if five_char_word[i] == single_char:
     print(single_char + " found at index " + str(i))
-    i+=1
-    num_chars +=1
-
-else:
-    i+=1
-
-if five_char_word[i] == single_char:
-    print(single_char + " found at index " + str(i))
-    i+=1
-    num_chars +=1
-
-else:
-    i+=1
-
-if five_char_word[i] == single_char:
-    print(single_char + " found at index " + str(i))
-    i+=1
-    num_chars +=1
+    i += 1
+    num_chars += 1
 
 if num_chars == 1:
     print(str(num_chars) + " instance of " + single_char + " found in " + five_char_word)
