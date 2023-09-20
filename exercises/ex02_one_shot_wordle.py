@@ -27,16 +27,16 @@ while int(idx_secret) < int(len(secret)):
 # the else takes all str values that do not equal the secret and throws them into a while loop to run through each letter of secret
 # if a letter of secret matches the current index of the guess, a yellow box will be added to the string. If not, a white box will be added to the string
     else:
-        while compare_char is False and secret_char < int(len(secret)):
+        while compare_char == False and secret_char < int(len(secret)):
             if secret[secret_char] == secret_guess[idx_secret]:
-                compare_char is True
+                compare_char = True
             else:
                 secret_char += 1  
 
         if compare_char == True:
             boxes += YELLOW_BOX
         else:
-                boxes += WHITE_BOX
+            boxes += WHITE_BOX
                 
         idx_secret += 1
 
