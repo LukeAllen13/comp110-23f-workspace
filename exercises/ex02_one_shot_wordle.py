@@ -11,7 +11,7 @@ YELLOW_BOX: str = "\U0001F7E8"
 boxes = " "
 idx_secret = 0
 compare_char = False
-secret_char = 0
+secret_int = 0
 
 # for every guess that is not the correct length, you get another guess
 while len(secret_guess) != len(secret):
@@ -22,24 +22,22 @@ while len(secret_guess) != len(secret):
 while int(idx_secret) < int(len(secret)):
     if secret[idx_secret] == secret_guess[idx_secret]:
         boxes += GREEN_BOX
-        idx_secret += 1
-
 # the else takes all str values that do not equal the secret and throws them into a while loop to run through each letter of secret
 # if a letter of secret matches the current index of the guess, a yellow box will be added to the string. If not, a white box will be added to the string
     else:
-        while compare_char is False and secret_char < int(len(secret)):
-            if secret[secret_char] == secret_guess[idx_secret]:
+        compare_char = False
+        secret_int = 0
+        while compare_char is False and secret_int < int(len(secret)):
+            if secret[secret_int] == secret_guess[idx_secret]:
                 compare_char = True
             else:
-                secret_char += 1  
+                secret_int += 1  
 
         if compare_char is True:
             boxes += YELLOW_BOX
         else:
             boxes += WHITE_BOX
-                
-        idx_secret += 1
-
+    idx_secret += 1
 # prints the boxes
 print(boxes)
 
