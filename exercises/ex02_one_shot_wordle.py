@@ -15,7 +15,7 @@ secret_char = 0
 
 # for every guess that is not the correct length, you get another guess
 while len(secret_guess) != len(secret):
-    secret_guess: str = input(f"That was not {len(secret)} letters! Try again: ")
+    secret_guess = input(f"That was not {len(secret)} letters! Try again: ")
     
 # first section checks to see if the current index of the guess (as the index increases) has a string value matching that of the secret word
 # if so it adds a green box onto the boxes string which tells you the which letter is in the correct position
