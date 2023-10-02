@@ -37,8 +37,7 @@ def input_guess(guess_length: int) -> str:
 
 def main() -> None:
     """The entrypoint of the program and teh main game loop."""
-    secret_word = "codes"
-    won = False  
+    secret_word = "codes" 
     turns = 1
     while turns < 7:
         print(f"=== Turn {turns}/6 ===")
