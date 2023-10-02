@@ -37,17 +37,20 @@ def input_guess(guess_length: int) -> str:
 
 def main() -> None:
     """The entrypoint of the program and teh main game loop."""
-    secret_word = "codes"
+    secret_word = "balls"
     won = False  
-    turns = 0
-    while turns < 6:
+    turns = 1
+    while turns < 7:
         print(f"=== Turn {turns}/6 ===")
         secret_guess = input(f"Enter a {str(len(secret_word))} letter word: ")
-        print(input_guess(len(secret_guess)))
+        #print(input_guess(len(secret_guess)))
         print(emojified(secret_guess, secret_word))
-
+        if str(secret_guess) == str(secret_word):
+            print(f"You won in {turns}/6 turns!")
+            exit()
         turns += 1
-        
+    print("X/6 - Sorry, try again tomorrow!")
+
 if __name__ == "__main__":
     main()
         
