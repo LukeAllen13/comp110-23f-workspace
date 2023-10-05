@@ -13,3 +13,16 @@ while l <= len(resources_list) - 1:
     l += 1
 
 print("Here are are my resource descriptions!")
+
+my_stats: int = input("Enter your pts per week and see how many points you will get: ")
+
+from random import randint
+
+opponent_score: int = randint(5,70)
+
+if my_stats > opponent_score:
+    print("You win! You get three points this week!")
+elif my_stats == opponent_score:
+    print("You tied! You each get 1 point.")
+else:
+    print(f"Unfortunate! You lost this week. Your opponent had {int(opponent_score)} points.")
