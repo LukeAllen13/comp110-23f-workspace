@@ -39,3 +39,5 @@ while weeks <= 7:
         losses += 1
     weeks += 1
     print(f"You have {int(wins)} wins, {int(losses)} losses, and {int(ties)} ties.")
+    if int(wins) < int(losses):
+        print("Computer: Fuck you hahahahaahahahaahahahahahaahahahhaha")
