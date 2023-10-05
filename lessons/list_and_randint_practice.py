@@ -29,15 +29,15 @@ while weeks <= 7:
     print(f"Week {int(weeks)}/7")
 
     if int(my_stats) > int(opponent_score):
-        print(f"You win! You get three points this week! Your opponent had {int(opponent_score)} points.")
+        print(f"You win! You get three points this week! Your opponent had {int(opponent_score)} points. \n")
         wins += 1
     elif my_stats == opponent_score:
-        print(f"You tied! You each get 1 point. Your opponent had {int(opponent_score)} points.")
+        print(f"You tied! You each get 1 point. Your opponent had {int(opponent_score)} points. \n")
         ties += 1
     else:
-        print(f"Unfortunate! You lost this week. Your opponent had {int(opponent_score)} points.")
+        print(f"Unfortunate! You lost this week. Your opponent had {int(opponent_score)} points. \n")
         losses += 1
     weeks += 1
-    print(f"You have {int(wins)} wins, {int(losses)} losses, and {int(ties)} ties.")
+    print(f"You have {int(wins)} wins, {int(losses)} losses, and {int(ties)} ties. \n")
     if int(wins) < int(losses):
-        print("Computer: Fuck you hahahahaahahahaahahahahahaahahahhaha")
+        print("Computer: hahahahaahahahaahahahahahaahahahhaha \n")
