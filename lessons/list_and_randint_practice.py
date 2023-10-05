@@ -17,6 +17,9 @@ print("Listed above are my resource descriptions! \n")
 print("Now see how you do by week in fpl! \n")
 
 weeks = 0
+wins = 0
+losses = 0
+ties = 0
 while weeks <= 7:
     my_stats: int = int(input("Enter your pts per week and see how many points you will get: "))
 
@@ -26,8 +29,12 @@ while weeks <= 7:
 
     if int(my_stats) > int(opponent_score):
         print(f"You win! You get three points this week! Your opponent had {int(opponent_score)} points.")
+        wins += 1
     elif my_stats == opponent_score:
         print(f"You tied! You each get 1 point. Your opponent had {int(opponent_score)} points.")
+        ties += 1
     else:
         print(f"Unfortunate! You lost this week. Your opponent had {int(opponent_score)} points.")
+        losses += 1
     weeks += 1
+    print(f"You have {int(wins)} wins, {int(losses)} losses, and {int(ties)} ties.")
