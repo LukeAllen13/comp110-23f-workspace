@@ -12,7 +12,9 @@ while l <= len(resources_list) - 1:
         print(f"{resources_list[2]} offers an option to call or text 988 or chat online if you’re thinking about suicide, are worried about a friend, or need emotional support. Also “offers ayuda en espanol.” \n")
     l += 1
 
-print("Here are are my resource descriptions! \n")
+print("Listed above are my resource descriptions! \n")
+
+print("Now see how you do by week in fpl!")
 
 weeks = 0
 while weeks <= 7:
