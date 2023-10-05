@@ -28,3 +28,4 @@ while weeks <= 7:
         print(f"You tied! You each get 1 point. Your opponent had {int(opponent_score)} points.")
     else:
         print(f"Unfortunate! You lost this week. Your opponent had {int(opponent_score)} points.")
+    weeks += 1
