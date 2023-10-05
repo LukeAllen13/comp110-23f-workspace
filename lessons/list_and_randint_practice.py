@@ -12,18 +12,19 @@ while l <= len(resources_list) - 1:
         print(f"{resources_list[2]} offers an option to call or text 988 or chat online if you’re thinking about suicide, are worried about a friend, or need emotional support. Also “offers ayuda en espanol.” \n")
     l += 1
 
-print("Here are are my resource descriptions!")
+print("Here are are my resource descriptions! \n")
 
+weeks = 0
+while weeks <= 7:
+    my_stats: int = int(input("Enter your pts per week and see how many points you will get: "))
 
-my_stats: int = int(input("Enter your pts per week and see how many points you will get: "))
+    from random import randint
 
-from random import randint
+    opponent_score: int = int(randint(5,70))
 
-opponent_score: int = int(randint(5,70))
-
-if int(my_stats) > int(opponent_score):
-    print("You win! You get three points this week! Your opponent had {int(opponent_score)} points.")
-elif my_stats == opponent_score:
-    print("You tied! You each get 1 point. Your opponent had {int(opponent_score)} points.")
-else:
-    print(f"Unfortunate! You lost this week. Your opponent had {int(opponent_score)} points.")
+    if int(my_stats) > int(opponent_score):
+        print(f"You win! You get three points this week! Your opponent had {int(opponent_score)} points.")
+    elif my_stats == opponent_score:
+        print(f"You tied! You each get 1 point. Your opponent had {int(opponent_score)} points.")
+    else:
+        print(f"Unfortunate! You lost this week. Your opponent had {int(opponent_score)} points.")
