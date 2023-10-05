@@ -14,7 +14,7 @@ while l <= len(resources_list) - 1:
 
 print("Listed above are my resource descriptions! \n")
 
-print("Now see how you do by week in fpl!")
+print("Now see how you do by week in fpl! \n")
 
 weeks = 0
 while weeks <= 7:
