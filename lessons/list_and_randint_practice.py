@@ -41,3 +41,27 @@ while weeks <= 7:
     print(f"You have {int(wins)} wins, {int(losses)} losses, and {int(ties)} ties. \n")
     if int(wins) < int(losses):
         print("Computer: hahahahaahahahaahahahahahaahahahhaha \n")
+
+
+suits = ["spade", "heart", "club", "diamond"]
+player1_starting_bank: int = 500
+player2_starting_bank: int = 500
+card1_num = int(randint(1,13))
+card2_num = int(randint(1,13))
+card3_num = int(randint(1,13))
+card4_num = int(randint(1,13))
+card5_num = int(randint(1,13))
+card1_suit = str(suits[randint(0,3)])
+card2_suit = str(suits[randint(0,3)])
+card3_suit = str(suits[randint(0,3)])
+card4_suit = str(suits[randint(0,3)])
+card5_suit = str(suits[randint(0,3)])
+player1_card_num = randint(1,13)
+player2_card_num = randint(1,13)
+player1_card_suit = str(suits[randint(0,3)])
+player2_card_suit = str(suits[randint(0,3)])
+player1_full_card = [player1_card_num, player1_card_suit]
+player2_full_card = [player1_card_num, player1_card_suit]
+turns = 0
+
+# if player1_card_num > card1_num:
