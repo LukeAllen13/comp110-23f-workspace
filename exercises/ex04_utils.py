@@ -18,8 +18,20 @@ def max(ints: list[int]) -> int:
     if len(ints) == 0:
         raise ValueError("max() arg is an empty List")
     while i < len(ints) - 1:
-        if ints[i + 1] > ints[i]:
-            max_int = int[i + 1]
+        if ints[i] > ints[i + 1]:
+            max_int = int[i]
         i += 1
+    return max_int
+
+def is_equal(list1: list[int], list2: list[int]) -> bool:
+    i = 0
+    if len(list1) != len(list2):
+        return False
+    while i < len(list1):
+        if list1[i] == list2[i]:
+            i += 1
+        else:
+            return False
+    return True
 
 
