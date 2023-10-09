@@ -22,12 +22,16 @@ def max(ints: list[int]) -> int:
     # uses the index counter i to go through each int in the list and compare it to the int in the next index. 
     # I did len (ints) -1 because you dont need to compare the int of the second to last index to anything if you already have the resulting info.
     if len(ints) == 0:
-        raise ValueError("max() arg is an empty List")
-    while i < len(ints) - 1:
-        if ints[i] > ints[i + 1]:
+        raise ValueError("max() arg is an empty list")
+    max_int: int = ints[0]
+    # while i < len(ints) - 1:
+    # if ints[i] > ints[i + 1]:
+    # max_int = ints[i]
+    # else:
+    # max_int = ints[i + 1]
+    while i < len(ints):
+        if ints[i] > max_int:
             max_int = ints[i]
-        else:
-            max_int = ints[i + 1]
         i += 1
     return max_int
 
