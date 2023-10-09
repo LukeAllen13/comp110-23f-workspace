@@ -24,6 +24,7 @@ def max(ints: list[int]) -> int:
     return max_int
 
 def is_equal(list1: list[int], list2: list[int]) -> bool:
+    """Given two lists of integers, return True is the lists are exactly the same"""
     i = 0
     if len(list1) != len(list2):
         return False
