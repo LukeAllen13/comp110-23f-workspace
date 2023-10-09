@@ -23,7 +23,7 @@ def emojified(guess_parameter: str, secret: str) -> str:
     GREEN_BOX: str = "\U0001F7E9"
     YELLOW_BOX: str = "\U0001F7E8"
     # main goal is to add an emoji onto the string "boxes" from left to right so the user knows if their guess has simlar letters or not
-    boxes = " "
+    boxes = ""
     while int(idx_secret) < int(len(secret)):
         if secret[idx_secret] == guess_parameter[idx_secret]:
             boxes += GREEN_BOX
@@ -39,7 +39,7 @@ def emojified(guess_parameter: str, secret: str) -> str:
 
 def input_guess(guess_length: int) -> str:
     """Checks to see if the length of the guessed word is equal to the length of the secret word. This is necessary because you want to continue to ask for a word if it is being given in the incorrect format (length)."""
-    secret_guess = input(f"Enter a {guess_length} letter word: ")
+    secret_guess = input(f"Enter a {guess_length} character word: ")
     # tells the user to input another guess beacause their last one was incorrect. Of course, they only get 6 attempts.
     while len(secret_guess) != guess_length:
         secret_guess = input(f"That wasn't {guess_length} chars! Try again: ")
