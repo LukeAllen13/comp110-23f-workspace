@@ -17,3 +17,11 @@ a: str = "24"
 b: str = a 
 a += "6"
 print(b)
+
+"""Half life problem."""
+i = 0
+drug_mg: int = 0
+while i < 50:
+    drug_mg: int = (drug_mg * .5) + 60
+    i += 1
+print(drug_mg)
