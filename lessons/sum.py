@@ -1,5 +1,5 @@
-"""for loop practice in class."""
-
+"""Summing the elements of a list using different loops"""
+__author__ = "730704135"
 
 def w_sum(nums: list[int]) -> int:
     """sums each integer in an inputed list."""
@@ -21,15 +21,10 @@ def f_sum(nums: list[int]) -> int:
     return sum
 
 
-print("Input a list of ints into the function f_range_sum. Try to input ints that add up to my mystery lucky number!")
 def f_range_sum(nums: list[int]) -> int or str:
     """sums each index in an inputed list."""
     assert len(nums) > 0
-    lucky_number = 13
     sum: int = 0
     for idx in range(0, len(nums)):
         sum += nums[idx]
-    if sum == lucky_number:
-        return "YOU FOUND MY LUCKY NUMBER!!"
-    if sum != lucky_number:
-        return (f"Try again! My lucky number is not {sum}")
+    return sum
