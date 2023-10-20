@@ -48,7 +48,7 @@ def input_guess(guess_length: int) -> str:
 
 def main() -> None:
     """The entrypoint of the program and the main game loop."""
-    secret_word = "codes" 
+    secret_word = "chess" 
     # allows the user 6 attempts to guess a word of any length. They must have the correct amount of letters in their guess for it to count and tell them how close they were. 
     # at the end, if you run out of guesses, you are either told you won in x/6 turns or you are told to try again tomorrow.
     # this is because the actual wordle game has one word a day. So, if you were to fail the word completely, you would have to return the next day to try a new one. 
