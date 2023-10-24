@@ -1,11 +1,18 @@
-"""
-Practice using functions to draw a scene. In this assignment, I attempted to create a replica of Spongebob trapped in mud.
-I used circles, semi-circles, rectangles, lines, and ovals. I was able to use my arms and shoes functions multiple times because of the 
-creative way I thought to copy them. I ended up using a for loop to obviously tell the computer that each was a different object, just being created by the same function.
-Also, I couldn't figure out how to change the background color of the python turtle window, so I just created a giant circle and colored it brown to look like mud. 
-"""
-__author__ = "730704135"
+"""Practice using functions to draw a scene."""
+
+
 from turtle import Turtle, colormode, done
+
+
+"""
+In this assignment, I attempted to create a replica of Spongebob trapped in mud.
+I used circles, semi-circles, rectangles, lines, and ovals. I was able to use my arms and shoes functions multiple times because of the
+creative way I thought to copy them. I ended up using a for loop to obviously tell the computer that each was a different object, just being created by the same function.
+Also, I couldn't figure out how to change the background color of the python turtle window, so I just created a giant circle and colored it brown to look like mud.
+"""
+
+
+__author__ = "730704135"
 
 
 def main() -> None:
@@ -184,7 +191,7 @@ def draw_arms(arms: Turtle, arms_x: float, arms_y: float) -> None:
     arms.penup()
 
 
-def draw_shoes(shoes: Turtle, shoes_radius, shoes_limit, shoes_x, shoes_y) -> None:
+def draw_shoes(shoes: Turtle, shoes_radius: float, shoes_limit: float, shoes_x: float, shoes_y: float) -> None:
     """Draws the shoes of Spongebob."""
     colormode(255)
     shoes.ht()
