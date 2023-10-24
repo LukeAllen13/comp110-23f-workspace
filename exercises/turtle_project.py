@@ -37,7 +37,7 @@ def main() -> None:
     done()
 
 
-def draw_mud(mud_turtle: Turtle, mud_radius) -> None:
+def draw_mud(mud_turtle: Turtle, mud_radius: float) -> None:
     """Draws mud for Spongebob to "bathe" in."""
     colormode(255)
     mud_turtle.ht()
