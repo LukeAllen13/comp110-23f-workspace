@@ -1,4 +1,9 @@
-"""Practice using functions to draw a scene."""
+"""
+Practice using functions to draw a scene. In this assignment, I attempted to create a replica of Spongebob trapped in mud.
+I used circles, semi-circles, rectangles, lines, and ovals. I was able to use my arms and shoes functions multiple times because of the 
+creative way I thought to copy them. I ended up using a for loop to obviously tell the computer that each was a different object, just being created by the same function.
+Also, I couldn't figure out how to change the background color of the python turtle window, so I just created a giant circle and colored it brown to look like mud. 
+"""
 __author__ = "730704135"
 from turtle import Turtle, colormode, done
 
@@ -25,8 +30,8 @@ def main() -> None:
     done()
 
 
-def draw_mud(mud_turtle: Turtle, mud_radius):
-    """Draws a mud puddle for Spongebob to bathe in."""
+def draw_mud(mud_turtle: Turtle, mud_radius) -> None:
+    """Draws mud for Spongebob to "bathe" in."""
     colormode(255)
     mud_turtle.ht()
     mud_turtle.penup()
@@ -38,7 +43,7 @@ def draw_mud(mud_turtle: Turtle, mud_radius):
     mud_turtle.end_fill()
 
 
-def draw_body(rect_turtle: Turtle, rect_x: float, rect_y: float, rect_width: float, rect_height: float, line_width: float):
+def draw_body(rect_turtle: Turtle, rect_x: float, rect_y: float, rect_width: float, rect_height: float, line_width: float) -> None:
     """Draws a rectangle at the specified coordinates with the specified width and height and line width."""
     colormode(255)
     rect_turtle.ht()
@@ -62,7 +67,7 @@ def draw_body(rect_turtle: Turtle, rect_x: float, rect_y: float, rect_width: flo
     rect_turtle.speed(100)
 
 
-def draw_eyeL(eye_turtle: Turtle, eye_x: float, eye_y: float, eye_radius: float, line_width: float):
+def draw_eyeL(eye_turtle: Turtle, eye_x: float, eye_y: float, eye_radius: float, line_width: float) -> None:
     """Draws an eye at the specified coordinates with the specified side length and line width."""
     colormode(255)
     eye_turtle.pencolor(0, 0, 0)
@@ -96,7 +101,7 @@ def draw_eyeL(eye_turtle: Turtle, eye_x: float, eye_y: float, eye_radius: float,
     eye_turtle.speed(100)
 
 
-def draw_eyeR(eye_turtle: Turtle, eye_x: float, eye_y: float, eye_radius: float, line_width: float):
+def draw_eyeR(eye_turtle: Turtle, eye_x: float, eye_y: float, eye_radius: float, line_width: float) -> None:
     """Draws an eye at the specified coordinates with the specified side length and line width."""
     colormode(255)
     eye_turtle.pencolor(0, 0, 0)
@@ -130,7 +135,7 @@ def draw_eyeR(eye_turtle: Turtle, eye_x: float, eye_y: float, eye_radius: float,
     eye_turtle.speed(100)
 
 
-def draw_nose(nose_turtle: Turtle, nose_x: float, nose_y: float, nose_radius: float, nose_limit: float):
+def draw_nose(nose_turtle: Turtle, nose_x: float, nose_y: float, nose_radius: float, nose_limit: float) -> None:
     """Draws a nose at the specified coordinates with the specified radius."""
     nose_turtle.width(10/6)
     nose_turtle.ht()
@@ -143,7 +148,7 @@ def draw_nose(nose_turtle: Turtle, nose_x: float, nose_y: float, nose_radius: fl
     nose_turtle.speed(100)
 
 
-def draw_smile(smile_turtle: Turtle, smile_radius: float, smile_limit: float):
+def draw_smile(smile_turtle: Turtle, smile_radius: float, smile_limit: float) -> None:
     """Draws a smile with a specified radius and diameter."""
     smile_turtle.ht()
     smile_turtle.penup()
@@ -154,7 +159,7 @@ def draw_smile(smile_turtle: Turtle, smile_radius: float, smile_limit: float):
     smile_turtle.circle(smile_radius, smile_limit)
 
 
-def draw_arms(arms: Turtle, arms_x: float, arms_y: float):
+def draw_arms(arms: Turtle, arms_x: float, arms_y: float) -> None:
     """Draws the arms of Spongebob."""
     colormode(255)
     arms.ht()
@@ -179,7 +184,7 @@ def draw_arms(arms: Turtle, arms_x: float, arms_y: float):
     arms.penup()
 
 
-def draw_shoes(shoes: Turtle, shoes_radius, shoes_limit, shoes_x, shoes_y):
+def draw_shoes(shoes: Turtle, shoes_radius, shoes_limit, shoes_x, shoes_y) -> None:
     """Draws the shoes of Spongebob."""
     colormode(255)
     shoes.ht()
