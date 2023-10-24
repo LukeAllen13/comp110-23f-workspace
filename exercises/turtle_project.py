@@ -1,9 +1,7 @@
-"""
-Practice using functions to draw a scene. In this assignment, I attempted to create a replica of Spongebob trapped in mud.
+"""Practice using functions to draw a scene. In this assignment, I attempted to create a replica of Spongebob trapped in mud.
 I used circles, semi-circles, rectangles, lines, and ovals. I was able to use my arms and shoes functions multiple times because of the 
 creative way I thought to copy them. I ended up using a for loop to obviously tell the computer that each was a different object, just being created by the same function.
-Also, I couldn't figure out how to change the background color of the python turtle window, so I just created a giant circle and colored it brown to look like mud. 
-"""
+Also, I couldn't figure out how to change the background color of the python turtle window, so I just created a giant circle and colored it brown to look like mud. """
 __author__ = "730704135"
 from turtle import Turtle, colormode, done
 
@@ -50,7 +48,7 @@ def draw_body(rect_turtle: Turtle, rect_x: float, rect_y: float, rect_width: flo
     rect_turtle.penup()
     rect_turtle.goto(rect_x, rect_y)
     rect_turtle.pendown()
-    rect_turtle.width(line_width/6)
+    rect_turtle.width(line_width / 6)
     rect_turtle.begin_fill()
     rect_turtle.fillcolor(255, 255, 0)
     i = 0
@@ -75,28 +73,28 @@ def draw_eyeL(eye_turtle: Turtle, eye_x: float, eye_y: float, eye_radius: float,
     eye_turtle.penup()
     eye_turtle.goto(eye_x, eye_y - eye_radius)
     eye_turtle.pendown() 
-    eye_turtle.width(line_width/6)
+    eye_turtle.width(line_width / 6)
     eye_turtle.begin_fill()
     eye_turtle.fillcolor(255, 255, 255)
     eye_turtle.circle(eye_radius)
     eye_turtle.end_fill()
-    eye_turtle.width(line_width/6)
+    eye_turtle.width(line_width / 6)
     eye_turtle.penup()
-    eye_turtle.goto(eye_x + eye_radius/4, eye_y - eye_radius/2)
+    eye_turtle.goto(eye_x + eye_radius / 4, eye_y - eye_radius / 2)
     eye_turtle.pendown()
     eye_turtle.pencolor(105, 105, 105)
     eye_turtle.begin_fill()
     eye_turtle.fillcolor(135, 206, 235)
-    eye_turtle.circle(eye_radius/2)
+    eye_turtle.circle(eye_radius / 2)
     eye_turtle.end_fill()
-    eye_turtle.width(line_width/2)
+    eye_turtle.width(line_width / 2)
     eye_turtle.penup()
-    eye_turtle.goto(eye_x + eye_radius/4, eye_y - 5)
+    eye_turtle.goto(eye_x + eye_radius / 4, eye_y - 5)
     eye_turtle.pendown()
     eye_turtle.pencolor(0, 0, 0)
     eye_turtle.begin_fill()
     eye_turtle.fillcolor(0, 0, 0)
-    eye_turtle.circle(eye_radius/7)
+    eye_turtle.circle(eye_radius / 7)
     eye_turtle.end_fill()
     eye_turtle.speed(100)
 
@@ -109,35 +107,35 @@ def draw_eyeR(eye_turtle: Turtle, eye_x: float, eye_y: float, eye_radius: float,
     eye_turtle.penup()
     eye_turtle.goto(eye_x, eye_y - eye_radius)
     eye_turtle.pendown() 
-    eye_turtle.width(line_width/6)
+    eye_turtle.width(line_width / 6)
     eye_turtle.begin_fill()
     eye_turtle.fillcolor(255, 255, 255)
     eye_turtle.circle(eye_radius)
     eye_turtle.end_fill()
-    eye_turtle.width(line_width/6)
+    eye_turtle.width(line_width / 6)
     eye_turtle.penup()
-    eye_turtle.goto(eye_x - eye_radius/4, eye_y - eye_radius/2)
+    eye_turtle.goto(eye_x - eye_radius / 4, eye_y - eye_radius / 2)
     eye_turtle.pendown()    
     eye_turtle.pencolor(105, 105, 105)
     eye_turtle.begin_fill()    
     eye_turtle.fillcolor(135, 206, 235)
-    eye_turtle.circle(eye_radius/2)
+    eye_turtle.circle(eye_radius / 2)
     eye_turtle.end_fill()
-    eye_turtle.width(line_width/2)
+    eye_turtle.width(line_width / 2)
     eye_turtle.penup()
-    eye_turtle.goto(eye_x - eye_radius/4, eye_y - 5)
+    eye_turtle.goto(eye_x - eye_radius / 4, eye_y - 5)
     eye_turtle.pendown()
     eye_turtle.pencolor(0, 0, 0)
     eye_turtle.begin_fill()
     eye_turtle.fillcolor(0, 0, 0)
-    eye_turtle.circle(eye_radius/7)
+    eye_turtle.circle(eye_radius / 7)
     eye_turtle.end_fill()
     eye_turtle.speed(100)
 
 
 def draw_nose(nose_turtle: Turtle, nose_x: float, nose_y: float, nose_radius: float, nose_limit: float) -> None:
     """Draws a nose at the specified coordinates with the specified radius."""
-    nose_turtle.width(10/6)
+    nose_turtle.width(10 / 6)
     nose_turtle.ht()
     colormode(255)
     nose_turtle.color(0, 0, 0)
@@ -154,7 +152,7 @@ def draw_smile(smile_turtle: Turtle, smile_radius: float, smile_limit: float) ->
     smile_turtle.penup()
     smile_turtle.goto(smile_radius - 160, smile_radius + 50)
     smile_turtle.pendown()
-    smile_turtle.width(10/6)
+    smile_turtle.width(10 / 6)
     smile_turtle.right(90)
     smile_turtle.circle(smile_radius, smile_limit)
 
