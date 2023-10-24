@@ -1,4 +1,5 @@
-"""Practice using functions to draw a scene. In this assignment, I attempted to create a replica of Spongebob trapped in mud.
+"""
+Practice using functions to draw a scene. In this assignment, I attempted to create a replica of Spongebob trapped in mud.
 I used circles, semi-circles, rectangles, lines, and ovals. I was able to use my arms and shoes functions multiple times because of the 
 creative way I thought to copy them. I ended up using a for loop to obviously tell the computer that each was a different object, just being created by the same function.
 Also, I couldn't figure out how to change the background color of the python turtle window, so I just created a giant circle and colored it brown to look like mud. 
