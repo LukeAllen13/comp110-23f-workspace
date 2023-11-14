@@ -9,7 +9,7 @@ class Point:
     y: float
 
     def __init__(self, x_init: float, y_init: float):
-        """Sets inputed x and y to the value of attributes x and y."""
+        """Sets inputed x and y to the value of attributes x and y.""" 
         self.x = x_init
         self.y = y_init
     
