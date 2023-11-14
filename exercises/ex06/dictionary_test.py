@@ -10,20 +10,20 @@ from dictionary import alphabetizer
 from dictionary import update_attendance
 
 
-def test_invert_edge():
+def test_invert1():
     """Test KeyError inside invert."""
     with pytest.raises(KeyError):
         my_dictionary: dict[str, str] = {"alyssa": "byrnes", "adam": "byrnes"}
         invert(my_dictionary)
 
 
-def test_invert_use1():
+def test_invert2():
     """Test to see if invert works on test dictionary."""
     test_dict: dict[str, str] = {"Hello" : "Bye", "Bye" : "Hello"}
     assert invert(test_dict) == {"Bye" : "Hello", "Hello" : "Bye"}
 
 
-def test_invert_use2():
+def test_invert3():
     """Test another dict to see if invert works."""
     test_dict: dict[str, str] = {"Bye": "Hello", "Good": "Talk", "Hello": "Do"}
     assert invert(test_dict) == {"Hello": "Bye", "Talk": "Good", "Do": "Hello"}
