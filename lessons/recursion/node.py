@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 """Node class for linked list."""
 
 from __future__ import annotations
@@ -23,7 +24,12 @@ class Node:
         
         
 =======
+=======
+"""Node Class."""
+
+>>>>>>> 17712b5 (Updated linked list documentation)
 from __future__ import annotations
+
 
 class Node:
     """My Node class for linked lists."""
