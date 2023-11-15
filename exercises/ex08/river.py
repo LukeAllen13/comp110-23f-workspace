@@ -4,6 +4,10 @@ from exercises.ex08.fish import Fish
 from exercises.ex08.bear import Bear
 
 class River:
+    """Class to create a River."""
+    day: int
+    fish: list[Fish]
+    bears: list[Bear]
     
     def __init__(self, num_fish: int, num_bears:int):
         """New River with num_fish Fish and num_bears Bears"""
@@ -17,21 +21,27 @@ class River:
             self.bears.append(Bear())
 
     def check_ages(self):
+        """check ages."""
         return None
 
     def bears_eating(self):
+        """bears eating."""
         return None
     
     def check_hunger(self):
+        """check hunger."""
         return None
         
     def repopulate_fish(self):
+        """repopulate the fish."""
         return None
     
     def repopulate_bears(self):
+        """repopulate the bears."""
         return None
     
     def view_river(self):
+        """view the river."""
         return None
             
     def one_river_day(self):
