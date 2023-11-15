@@ -12,4 +12,5 @@ class Bear:
     
     def one_day(self):
         """one_day."""
+        self.age += 1
         return None

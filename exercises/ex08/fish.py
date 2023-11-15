@@ -10,4 +10,5 @@ class Fish:
     
     def one_day(self):
         """one_day function."""
+        self.age += 1
         return None

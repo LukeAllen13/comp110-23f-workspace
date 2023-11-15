@@ -1,13 +1,7 @@
 """Simulate a River."""
 
-from exercises.ex08.river import River
+from river import River
 
+my_river: River = River(10, 2)
 
-def main():
-    """Run Main."""
-    my_river: River = River()
-    print(my_river)
-
-
-if __name__ == "__main__":
-    main()
+my_river.view_river()
