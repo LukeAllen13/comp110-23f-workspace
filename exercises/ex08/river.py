@@ -47,12 +47,6 @@ class River:
                 Healthy_bears.append(bear)
         self.bears = Healthy_bears
         return None
-    
-    def check_hunger(self):
-        """check hunger."""
-        healthy_bears = [bear for bear in self.bears if bear.hunger_score >= 0]
-        self.bears = healthy_bears
-        return None
         
     def repopulate_fish(self):
         """repopulate the fish."""
