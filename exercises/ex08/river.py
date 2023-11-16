@@ -1,4 +1,4 @@
-"""File to define River class"""
+"""File to define River class."""
 __author__ = "730704135"
 
 
@@ -12,8 +12,8 @@ class River:
     fish: list[Fish]
     bears: list[Bear]
     
-    def __init__(self, num_fish: int, num_bears:int):
-        """New River with num_fish Fish and num_bears Bears"""
+    def __init__(self, num_fish: int, num_bears: int):
+        """New River with num_fish Fish and num_bears Bears."""
         self.day: int = 0
         self.fish: list[Fish] = []
         self.bears: list[Bear] = []
@@ -24,13 +24,13 @@ class River:
             self.bears.append(Bear())
 
     def check_ages(self):
-        """check ages."""
+        """Check ages."""
         self.fish = [fish for fish in self.fish if fish.age <= 3]
         self.bears = [bear for bear in self.bears if bear.age <= 5]
         return None
 
     def bears_eating(self):
-        """bears eating."""
+        """Bears eating."""
         for bear in self.bears:
             if len(self.fish) >= 5:
                 self.remove_fish(3)
@@ -38,7 +38,7 @@ class River:
         return None
     
     def check_hunger(self):
-        """check hunger."""
+        """Check hunger."""
         Healthy_bears: list[Bear] = []
         for bear in self.bears:
             if bear.hunger_score < 0:
@@ -49,7 +49,7 @@ class River:
         return None
         
     def repopulate_fish(self):
-        """repopulate the fish."""
+        """Repopulate the fish."""
         born_fish = []
         for i in range(0, len(self.fish), 2):
             if i + 1 < len(self.fish):
@@ -60,7 +60,7 @@ class River:
         return None
     
     def repopulate_bears(self):
-        """repopulate the bears."""
+        """Repopulate the bears."""
         born_bears = []
         for i in range(0, len(self.bears), 2):
             if i + 1 < len(self.bears):
@@ -70,7 +70,7 @@ class River:
         return None
     
     def view_river(self) -> None:
-        """view the river."""
+        """View the river."""
         print(f"~~~ Day {self.day}: ~~~")
         if self.bears == []:
             len(self.bears) == 0
@@ -81,7 +81,7 @@ class River:
         return None
     
     def one_river_day(self):
-        """Simulate one day of life in the river"""
+        """Simulate one day of life in the river."""
         # Increase day by 1
         self.day += 1
         # Simulate one day for all Bears
