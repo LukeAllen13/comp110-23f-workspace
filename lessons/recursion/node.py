@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 """Node class for linked list."""
 
 from __future__ import annotations
@@ -23,16 +20,6 @@ class Node:
             # Recursive Step
             return str(self.data) + "->" + str(self.next)
         
-        
-=======
-=======
-=======
->>>>>>> c975665 (node)
-"""Node Class."""
-
->>>>>>> 17712b5 (Updated linked list documentation)
-from __future__ import annotations
-
 
 class Node:
     """My Node class for linked lists."""
@@ -61,13 +48,9 @@ class Node:
     
     def last(self):
         return None
-<<<<<<< HEAD
->>>>>>> db75118 (Added cq for recursion)
-=======
-=======
+
 """Node class for linked list."""
 
-from __future__ import annotations
 
 class Node:
 
@@ -86,7 +69,3 @@ class Node:
         else:
             # Recursive Step
             return str(self.data) + "->" + str(self.next)
-        
-        
->>>>>>> 8471680 (node)
->>>>>>> c975665 (node)
