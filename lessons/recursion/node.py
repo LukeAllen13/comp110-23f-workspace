@@ -2,9 +2,9 @@
 
 from __future__ import annotations
 
+
 class Node:
     """My Node class for linked lists."""
-    
     data: int
     next: Node | None
     
@@ -21,7 +21,7 @@ class Node:
         else:
             return f"{self.data} -> {self.next}"
         
-    def head(self) -> int | None:
+    def head(self) -> int:
         """Return the data in the first node of the linked list."""
         return self.data
     
@@ -29,12 +29,11 @@ class Node:
         """Return a linked list of every element except for the head."""
         return self.next
     
-    def last(self) -> int | None:
+    def last(self) -> int:
         """Return the data in the last node of the linked list."""
         tail_node = self.tail()
-        if tail_node != None:
-            while tail_node.next != None:
+        if tail_node is not None:
+            while tail_node.next is not None:
                 tail_node = tail_node.next
             return tail_node.data
-        else:
-            return None
+        return self.data
