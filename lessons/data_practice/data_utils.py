@@ -17,6 +17,6 @@ def column_vals(table: list[dict[str, str]], header: str) -> list[str]:
     result: list[str] = []
     for row in table:
         # append every value under key header
-        result.append(row[header]
+        result.append(row[header])
     return result
 
