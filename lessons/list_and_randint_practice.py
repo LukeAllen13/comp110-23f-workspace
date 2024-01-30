@@ -15,18 +15,18 @@ while l <= len(resources_list) - 1:
 print("Listed above are my resource descriptions! \n")
 
 print("Now see how you do by week in fpl! \n")
-
 weeks = 1
 wins = 0
 losses = 0
 ties = 0
-while weeks <= 7:
-    my_stats: int = int(input("Enter your pts per week and see how many points you will get: "))
 
+while weeks <= 21:
+    my_stats: int = int(input("Enter your average pts per week and see how many points you will get when facing the bot!: "))
+    
     from random import randint
 
     opponent_score: int = int(randint(5,70))
-    print(f"Week {int(weeks)}/7")
+    print(f"Week {int(weeks)}/21")
 
     if int(my_stats) > int(opponent_score):
         print(f"You win! You get three points this week! Your opponent had {int(opponent_score)} points. \n")
